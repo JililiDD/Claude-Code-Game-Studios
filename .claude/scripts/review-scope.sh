@@ -29,7 +29,7 @@
 
 set -u
 
-cd "$(dirname "$0")/../.." || { echo "review-scope: cannot reach repo root" >&2; exit 1; }
+cd "${CCGS_GAME_ROOT:-$(dirname "$0")/../..}" || { echo "review-scope: cannot reach game root" >&2; exit 1; }
 
 GDD_GLOB=':(glob)design/gdd/*.md'
 

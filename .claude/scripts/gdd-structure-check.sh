@@ -25,7 +25,7 @@
 
 set -u
 
-cd "$(dirname "$0")/../.." || { echo "gdd-structure-check: cannot reach repo root" >&2; exit 1; }
+cd "${CCGS_GAME_ROOT:-$(dirname "$0")/../..}" || { echo "gdd-structure-check: cannot reach game root" >&2; exit 1; }
 
 # Each MATCH entry is an ERE alternation of every accepted heading for one
 # required section; LABEL is the canonical name reported to the caller.

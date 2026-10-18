@@ -82,7 +82,9 @@ else
   ROOT="$(pwd -W 2>/dev/null || pwd)"
 fi
 
-CATALOG="$ROOT/.claude/docs/workflow-catalog.yaml"
+# A Pi package keeps the catalog in the framework checkout while scanning a
+# separate game root. The default retains Claude Code's existing behavior.
+CATALOG="${CCGS_CATALOG:-$ROOT/.claude/docs/workflow-catalog.yaml}"
 if [ ! -f "$CATALOG" ]; then
   echo "artifact-check: catalog not found at $CATALOG" >&2
   exit 1

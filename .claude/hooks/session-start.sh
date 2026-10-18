@@ -26,6 +26,9 @@ else
   CCGS_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." 2>/dev/null && pwd)"
 fi
 [ -n "$CCGS_ROOT" ] && cd "$CCGS_ROOT" 2>/dev/null || true
+# Pi may supply the helper from its installed framework checkout; the default
+# keeps Claude Code's original project-local resolution unchanged.
+CCGS_HELPER="${CCGS_HELPER:-.claude/hooks/yaml-helper.sh}"
 
 # Claude Code SessionStart hook: Load project context at session start
 # Outputs context information that Claude sees when a session begins
@@ -72,8 +75,8 @@ fi
 # returns empty for a rigor-only project, which would leave the banner showing a
 # stale `lean`.
 REVIEW_MODE=""
-if [ -f "project.yaml" ] && [ -f ".claude/hooks/yaml-helper.sh" ]; then
-    source .claude/hooks/yaml-helper.sh
+if [ -f "project.yaml" ] && [ -f "$CCGS_HELPER" ]; then
+    source "$CCGS_HELPER"
     REVIEW_MODE=$(resolve_setting modes.review_mode 2>/dev/null | cut -f1)
 fi
 if [ -z "$REVIEW_MODE" ] && [ -f "production/review-mode.txt" ]; then
@@ -91,9 +94,9 @@ echo "Review mode: $REVIEW_MODE"
 # Schema validation — surface invalid enum values in
 # project.yaml and project.local.yaml so typos like `automation: chaotic`
 # surface at session start rather than failing inside a skill.
-if [ -f ".claude/hooks/yaml-helper.sh" ]; then
+if [ -f "$CCGS_HELPER" ]; then
     if ! type validate_yaml_enum >/dev/null 2>&1; then
-        source .claude/hooks/yaml-helper.sh
+        source "$CCGS_HELPER"
     fi
     # Hard-error guard: project.local.yaml requires a project.yaml base
     if ! BASE_ERR=$(validate_local_yaml_base 2>&1); then
@@ -181,8 +184,8 @@ fi
 #
 # Sourcing here is defensive: the two source sites above are both conditional,
 # so by this point the function may or may not exist.
-if [ -f .claude/hooks/yaml-helper.sh ] && ! command -v resolve_code_root >/dev/null 2>&1; then
-    . .claude/hooks/yaml-helper.sh 2>/dev/null
+if [ -f "$CCGS_HELPER" ] && ! command -v resolve_code_root >/dev/null 2>&1; then
+    . "$CCGS_HELPER" 2>/dev/null
 fi
 if command -v resolve_code_root >/dev/null 2>&1; then
     CODE_ROOT=$(resolve_code_root 2>/dev/null | cut -f1)
@@ -246,8 +249,8 @@ fi
 # whose absence the user cannot notice. Show the state unless we positively
 # determined the flag is off.
 STATE_FILE="production/session-state/active.md"
-if [ -f .claude/hooks/yaml-helper.sh ] && ! command -v session_state_enabled >/dev/null 2>&1; then
-    . .claude/hooks/yaml-helper.sh
+if [ -f "$CCGS_HELPER" ] && ! command -v session_state_enabled >/dev/null 2>&1; then
+    . "$CCGS_HELPER"
 fi
 if [ -f "$STATE_FILE" ] && { ! command -v session_state_enabled >/dev/null 2>&1 || session_state_enabled; }; then
     echo ""

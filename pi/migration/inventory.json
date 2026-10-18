@@ -1,0 +1,2722 @@
+{
+  "schema_version": 1,
+  "note": "Source inventory only; every resource remains unverified for Pi until tested.",
+  "counts": {
+    "skills": 74,
+    "agents": 49,
+    "hooks": 14,
+    "rules": 13
+  },
+  "skills": [
+    {
+      "name": "adopt",
+      "source": ".claude/skills/adopt/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/adopt",
+        "/hooks",
+        "/project-stage-detect"
+      ],
+      "known_skill_references": [
+        "project-stage-detect"
+      ]
+    },
+    {
+      "name": "architecture-decision",
+      "source": ".claude/skills/architecture-decision/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/architecture-decision",
+        "/architecture-review",
+        "/design-system",
+        "/hooks"
+      ],
+      "known_skill_references": [
+        "architecture-review",
+        "design-system"
+      ]
+    },
+    {
+      "name": "architecture-review",
+      "source": ".claude/skills/architecture-review/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/hooks"
+      ],
+      "known_skill_references": []
+    },
+    {
+      "name": "art-bible",
+      "source": ".claude/skills/art-bible/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/asset-spec",
+        "/brainstorm",
+        "/consistency-check",
+        "/create-architecture",
+        "/create-stories",
+        "/design-system",
+        "/dev-story",
+        "/hooks",
+        "/map-systems",
+        "/review-all-gdds",
+        "/setup-engine"
+      ],
+      "known_skill_references": [
+        "asset-spec",
+        "brainstorm",
+        "consistency-check",
+        "create-architecture",
+        "create-stories",
+        "design-system",
+        "dev-story",
+        "map-systems",
+        "review-all-gdds",
+        "setup-engine"
+      ]
+    },
+    {
+      "name": "asset-audit",
+      "source": ".claude/skills/asset-audit/SKILL.md",
+      "flags": [
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin"
+      ],
+      "slash_references": [
+        "/art-bible",
+        "/content-audit",
+        "/setup-engine"
+      ],
+      "known_skill_references": [
+        "art-bible",
+        "content-audit",
+        "setup-engine"
+      ]
+    },
+    {
+      "name": "asset-spec",
+      "source": ".claude/skills/asset-spec/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/art-bible",
+        "/asset-audit",
+        "/asset-spec",
+        "/design-system",
+        "/hooks",
+        "/ux-design"
+      ],
+      "known_skill_references": [
+        "art-bible",
+        "asset-audit",
+        "design-system",
+        "ux-design"
+      ]
+    },
+    {
+      "name": "balance-check",
+      "source": ".claude/skills/balance-check/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/balance-check",
+        "/design-system",
+        "/hooks",
+        "/propagate-design-change"
+      ],
+      "known_skill_references": [
+        "design-system",
+        "propagate-design-change"
+      ]
+    },
+    {
+      "name": "brainstorm",
+      "source": ".claude/skills/brainstorm/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/architecture-decision",
+        "/architecture-review",
+        "/art-bible",
+        "/brainstorm",
+        "/create-architecture",
+        "/create-epics",
+        "/create-stories",
+        "/design-review",
+        "/design-system",
+        "/dev-story",
+        "/gate-check",
+        "/hooks",
+        "/map-systems",
+        "/prototype",
+        "/setup-engine",
+        "/sprint-plan",
+        "/start",
+        "/vertical-slice"
+      ],
+      "known_skill_references": [
+        "architecture-decision",
+        "architecture-review",
+        "art-bible",
+        "create-architecture",
+        "create-epics",
+        "create-stories",
+        "design-review",
+        "design-system",
+        "dev-story",
+        "gate-check",
+        "map-systems",
+        "prototype",
+        "setup-engine",
+        "sprint-plan",
+        "start",
+        "vertical-slice"
+      ]
+    },
+    {
+      "name": "bug-report",
+      "source": ".claude/skills/bug-report/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/bug-report",
+        "/bug-triage",
+        "/hooks",
+        "/hotfix"
+      ],
+      "known_skill_references": [
+        "bug-triage",
+        "hotfix"
+      ]
+    },
+    {
+      "name": "bug-triage",
+      "source": ".claude/skills/bug-triage/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/bug-triage",
+        "/hooks",
+        "/smoke-check",
+        "/sprint-status",
+        "/team-qa"
+      ],
+      "known_skill_references": [
+        "smoke-check",
+        "sprint-status",
+        "team-qa"
+      ]
+    },
+    {
+      "name": "changelog",
+      "source": ".claude/skills/changelog/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/dev",
+        "/hooks",
+        "/patch-notes",
+        "/release-checklist"
+      ],
+      "known_skill_references": [
+        "patch-notes",
+        "release-checklist"
+      ]
+    },
+    {
+      "name": "code-review",
+      "source": ".claude/skills/code-review/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/architecture-decision",
+        "/code-review",
+        "/create-stories",
+        "/dev-story",
+        "/hooks",
+        "/setup-engine",
+        "/story-done"
+      ],
+      "known_skill_references": [
+        "architecture-decision",
+        "create-stories",
+        "dev-story",
+        "setup-engine",
+        "story-done"
+      ]
+    },
+    {
+      "name": "consistency-check",
+      "source": ".claude/skills/consistency-check/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/consistency-check",
+        "/create-architecture",
+        "/design-review",
+        "/design-system",
+        "/hooks",
+        "/review-all-gdds"
+      ],
+      "known_skill_references": [
+        "create-architecture",
+        "design-review",
+        "design-system",
+        "review-all-gdds"
+      ]
+    },
+    {
+      "name": "content-audit",
+      "source": ".claude/skills/content-audit/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/abilities",
+        "/characters",
+        "/content-audit",
+        "/create-stories",
+        "/design-system",
+        "/enemies",
+        "/equipment",
+        "/hooks",
+        "/items",
+        "/loot",
+        "/map-systems",
+        "/missions",
+        "/quests",
+        "/quick-design",
+        "/skills",
+        "/spells",
+        "/sprint-plan"
+      ],
+      "known_skill_references": [
+        "create-stories",
+        "design-system",
+        "map-systems",
+        "quick-design",
+        "sprint-plan"
+      ]
+    },
+    {
+      "name": "create-architecture",
+      "source": ".claude/skills/create-architecture/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/architecture-decision",
+        "/architecture-review",
+        "/create-control-manifest",
+        "/gate-check",
+        "/hooks",
+        "/test-setup",
+        "/ux-design"
+      ],
+      "known_skill_references": [
+        "architecture-decision",
+        "architecture-review",
+        "create-control-manifest",
+        "gate-check",
+        "test-setup",
+        "ux-design"
+      ]
+    },
+    {
+      "name": "create-control-manifest",
+      "source": ".claude/skills/create-control-manifest/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/architecture-decision",
+        "/architecture-review",
+        "/create-control-manifest",
+        "/create-epics",
+        "/create-stories",
+        "/current-best-practices",
+        "/deprecated-apis",
+        "/hooks",
+        "/story-readiness"
+      ],
+      "known_skill_references": [
+        "architecture-decision",
+        "architecture-review",
+        "create-epics",
+        "create-stories",
+        "story-readiness"
+      ]
+    },
+    {
+      "name": "create-epics",
+      "source": ".claude/skills/create-epics/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/architecture-decision",
+        "/architecture-review",
+        "/brainstorm",
+        "/create-control-manifest",
+        "/create-epics",
+        "/create-stories",
+        "/design-system",
+        "/dev-story",
+        "/gate-check",
+        "/hooks",
+        "/map-systems",
+        "/sprint-plan",
+        "/start",
+        "/story-done"
+      ],
+      "known_skill_references": [
+        "architecture-decision",
+        "architecture-review",
+        "brainstorm",
+        "create-control-manifest",
+        "create-stories",
+        "design-system",
+        "dev-story",
+        "gate-check",
+        "map-systems",
+        "sprint-plan",
+        "start",
+        "story-done"
+      ]
+    },
+    {
+      "name": "create-stories",
+      "source": ".claude/skills/create-stories/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/architecture-decision",
+        "/brainstorm",
+        "/create-epics",
+        "/create-stories",
+        "/dev-story",
+        "/gate-check",
+        "/help",
+        "/hooks",
+        "/qa-plan",
+        "/smoke-check",
+        "/sprint-plan",
+        "/sprint-status",
+        "/story",
+        "/story-",
+        "/story-done",
+        "/story-readiness"
+      ],
+      "known_skill_references": [
+        "architecture-decision",
+        "brainstorm",
+        "create-epics",
+        "dev-story",
+        "gate-check",
+        "help",
+        "qa-plan",
+        "smoke-check",
+        "sprint-plan",
+        "sprint-status",
+        "story-done",
+        "story-readiness"
+      ]
+    },
+    {
+      "name": "day-one-patch",
+      "source": ".claude/skills/day-one-patch/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin"
+      ],
+      "slash_references": [
+        "/bug-report",
+        "/bug-triage",
+        "/gate-check",
+        "/launch-checklist",
+        "/patch-notes",
+        "/retrospective",
+        "/smoke-check",
+        "/team-qa"
+      ],
+      "known_skill_references": [
+        "bug-report",
+        "bug-triage",
+        "gate-check",
+        "launch-checklist",
+        "patch-notes",
+        "retrospective",
+        "smoke-check",
+        "team-qa"
+      ]
+    },
+    {
+      "name": "design-review",
+      "source": ".claude/skills/design-review/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/clear",
+        "/consistency-check",
+        "/design-review",
+        "/design-system",
+        "/hooks",
+        "/review-all-gdds"
+      ],
+      "known_skill_references": [
+        "consistency-check",
+        "design-system",
+        "review-all-gdds"
+      ]
+    },
+    {
+      "name": "design-system",
+      "source": ".claude/skills/design-system/SKILL.md",
+      "flags": [
+        "agent_dispatch",
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/consistency-check",
+        "/design-review",
+        "/design-system",
+        "/gate-check",
+        "/hooks",
+        "/map-systems"
+      ],
+      "known_skill_references": [
+        "consistency-check",
+        "design-review",
+        "gate-check",
+        "map-systems"
+      ]
+    },
+    {
+      "name": "dev-story",
+      "source": ".claude/skills/dev-story/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/architecture-decision",
+        "/code-review",
+        "/create-stories",
+        "/dev-story",
+        "/hooks",
+        "/qa-plan",
+        "/story-done",
+        "/story-readiness",
+        "/team-qa"
+      ],
+      "known_skill_references": [
+        "architecture-decision",
+        "code-review",
+        "create-stories",
+        "qa-plan",
+        "story-done",
+        "story-readiness",
+        "team-qa"
+      ]
+    },
+    {
+      "name": "estimate",
+      "source": ".claude/skills/estimate/SKILL.md",
+      "flags": [
+        "claude_tool_grant",
+        "model_pin"
+      ],
+      "slash_references": [
+        "/create-stories",
+        "/prototype",
+        "/sprint-plan"
+      ],
+      "known_skill_references": [
+        "create-stories",
+        "prototype",
+        "sprint-plan"
+      ]
+    },
+    {
+      "name": "gate-check",
+      "source": ".claude/skills/gate-check/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/gate-check",
+        "/hooks",
+        "/project-stage-detect",
+        "/smoke-check",
+        "/test-setup"
+      ],
+      "known_skill_references": [
+        "project-stage-detect",
+        "smoke-check",
+        "test-setup"
+      ]
+    },
+    {
+      "name": "help",
+      "source": ".claude/skills/help/SKILL.md",
+      "flags": [
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/brainstorm",
+        "/command",
+        "/create-epics",
+        "/create-stories",
+        "/dev-story",
+        "/gate-check",
+        "/hooks",
+        "/project-stage-detect",
+        "/retrospective",
+        "/scripts",
+        "/settings",
+        "/setup-engine",
+        "/skill-name",
+        "/smoke-check",
+        "/start",
+        "/story",
+        "/story-done",
+        "/team-qa"
+      ],
+      "known_skill_references": [
+        "brainstorm",
+        "create-epics",
+        "create-stories",
+        "dev-story",
+        "gate-check",
+        "project-stage-detect",
+        "retrospective",
+        "settings",
+        "setup-engine",
+        "smoke-check",
+        "start",
+        "story-done",
+        "team-qa"
+      ]
+    },
+    {
+      "name": "hotfix",
+      "source": ".claude/skills/hotfix/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin"
+      ],
+      "slash_references": [
+        "/bug-report",
+        "/bug-triage",
+        "/dev",
+        "/hotfix",
+        "/patch-notes",
+        "/retrospective",
+        "/smoke-check",
+        "/team-qa"
+      ],
+      "known_skill_references": [
+        "bug-report",
+        "bug-triage",
+        "patch-notes",
+        "retrospective",
+        "smoke-check",
+        "team-qa"
+      ]
+    },
+    {
+      "name": "launch-checklist",
+      "source": ".claude/skills/launch-checklist/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/gate-check",
+        "/hooks",
+        "/launch-checklist",
+        "/soak-test",
+        "/team-release"
+      ],
+      "known_skill_references": [
+        "gate-check",
+        "soak-test",
+        "team-release"
+      ]
+    },
+    {
+      "name": "localize",
+      "source": ".claude/skills/localize/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/content-audit",
+        "/gate-check",
+        "/hooks",
+        "/localize"
+      ],
+      "known_skill_references": [
+        "content-audit",
+        "gate-check"
+      ]
+    },
+    {
+      "name": "map-systems",
+      "source": ".claude/skills/map-systems/SKILL.md",
+      "flags": [
+        "agent_dispatch",
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/brainstorm",
+        "/create-epics",
+        "/design-review",
+        "/design-system",
+        "/gate-check",
+        "/hooks",
+        "/map-systems"
+      ],
+      "known_skill_references": [
+        "brainstorm",
+        "create-epics",
+        "design-review",
+        "design-system",
+        "gate-check"
+      ]
+    },
+    {
+      "name": "milestone-review",
+      "source": ".claude/skills/milestone-review/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/bug-triage",
+        "/gate-check",
+        "/hooks",
+        "/sprint-plan",
+        "/story"
+      ],
+      "known_skill_references": [
+        "bug-triage",
+        "gate-check",
+        "sprint-plan"
+      ]
+    },
+    {
+      "name": "onboard",
+      "source": ".claude/skills/onboard/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/help",
+        "/hooks",
+        "/onboard",
+        "/sprint-status",
+        "/test-setup"
+      ],
+      "known_skill_references": [
+        "help",
+        "sprint-status",
+        "test-setup"
+      ]
+    },
+    {
+      "name": "patch-notes",
+      "source": ".claude/skills/patch-notes/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/changelog",
+        "/hooks",
+        "/patch-notes",
+        "/release-checklist"
+      ],
+      "known_skill_references": [
+        "changelog",
+        "release-checklist"
+      ]
+    },
+    {
+      "name": "perf-profile",
+      "source": ".claude/skills/perf-profile/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/architecture-decision",
+        "/dev",
+        "/gate-check",
+        "/hooks",
+        "/scope-check",
+        "/settings",
+        "/sprint-plan",
+        "/team-polish"
+      ],
+      "known_skill_references": [
+        "architecture-decision",
+        "gate-check",
+        "scope-check",
+        "settings",
+        "sprint-plan",
+        "team-polish"
+      ]
+    },
+    {
+      "name": "playtest-report",
+      "source": ".claude/skills/playtest-report/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/balance-check",
+        "/bug-report",
+        "/bug-triage",
+        "/design-review",
+        "/hooks",
+        "/propagate-design-change"
+      ],
+      "known_skill_references": [
+        "balance-check",
+        "bug-report",
+        "bug-triage",
+        "design-review",
+        "propagate-design-change"
+      ]
+    },
+    {
+      "name": "project-stage-detect",
+      "source": ".claude/skills/project-stage-detect/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/architecture-decision",
+        "/gameplay",
+        "/gate-check",
+        "/hooks",
+        "/map-systems",
+        "/milestone-review",
+        "/project-stage-detect",
+        "/reverse-document",
+        "/sprint-plan",
+        "/start"
+      ],
+      "known_skill_references": [
+        "architecture-decision",
+        "gate-check",
+        "map-systems",
+        "milestone-review",
+        "reverse-document",
+        "sprint-plan",
+        "start"
+      ]
+    },
+    {
+      "name": "propagate-design-change",
+      "source": ".claude/skills/propagate-design-change/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/architecture-decision",
+        "/architecture-review",
+        "/design-system",
+        "/hooks",
+        "/propagate-design-change"
+      ],
+      "known_skill_references": [
+        "architecture-decision",
+        "architecture-review",
+        "design-system"
+      ]
+    },
+    {
+      "name": "prototype",
+      "source": ".claude/skills/prototype/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/brainstorm",
+        "/hooks",
+        "/setup-engine",
+        "/vertical-slice"
+      ],
+      "known_skill_references": [
+        "brainstorm",
+        "setup-engine",
+        "vertical-slice"
+      ]
+    },
+    {
+      "name": "qa-plan",
+      "source": ".claude/skills/qa-plan/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/code-review",
+        "/create-stories",
+        "/dev-story",
+        "/hooks",
+        "/qa-plan",
+        "/smoke-check",
+        "/sprint-plan",
+        "/story",
+        "/story-done",
+        "/story-readiness"
+      ],
+      "known_skill_references": [
+        "code-review",
+        "create-stories",
+        "dev-story",
+        "smoke-check",
+        "sprint-plan",
+        "story-done",
+        "story-readiness"
+      ]
+    },
+    {
+      "name": "quick-design",
+      "source": ".claude/skills/quick-design/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/design-review",
+        "/design-system",
+        "/dev-story",
+        "/hooks",
+        "/review-all-gdds",
+        "/story-readiness"
+      ],
+      "known_skill_references": [
+        "design-review",
+        "design-system",
+        "dev-story",
+        "review-all-gdds",
+        "story-readiness"
+      ]
+    },
+    {
+      "name": "regression-suite",
+      "source": ".claude/skills/regression-suite/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/design-system",
+        "/gate-check",
+        "/hooks",
+        "/map-systems",
+        "/regression-suite",
+        "/scope-check",
+        "/smoke-check",
+        "/test-flakiness",
+        "/test-helpers",
+        "/test-setup"
+      ],
+      "known_skill_references": [
+        "design-system",
+        "gate-check",
+        "map-systems",
+        "scope-check",
+        "smoke-check",
+        "test-flakiness",
+        "test-helpers",
+        "test-setup"
+      ]
+    },
+    {
+      "name": "release-checklist",
+      "source": ".claude/skills/release-checklist/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/bug-report",
+        "/bug-triage",
+        "/changelog",
+        "/gate-check",
+        "/hooks",
+        "/launch-checklist",
+        "/patch-notes",
+        "/release-checklist",
+        "/team-release"
+      ],
+      "known_skill_references": [
+        "bug-report",
+        "bug-triage",
+        "changelog",
+        "gate-check",
+        "launch-checklist",
+        "patch-notes",
+        "team-release"
+      ]
+    },
+    {
+      "name": "retrospective",
+      "source": ".claude/skills/retrospective/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/dev",
+        "/gate-check",
+        "/hooks",
+        "/sprint-plan",
+        "/sprint-status",
+        "/story"
+      ],
+      "known_skill_references": [
+        "gate-check",
+        "sprint-plan",
+        "sprint-status"
+      ]
+    },
+    {
+      "name": "reverse-document",
+      "source": ".claude/skills/reverse-document/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/ai",
+        "/balance-check",
+        "/core",
+        "/create-epics",
+        "/create-stories",
+        "/design-review",
+        "/design-system",
+        "/gameplay",
+        "/hooks",
+        "/map-systems",
+        "/networking",
+        "/reverse-document",
+        "/ui"
+      ],
+      "known_skill_references": [
+        "balance-check",
+        "create-epics",
+        "create-stories",
+        "design-review",
+        "design-system",
+        "map-systems"
+      ]
+    },
+    {
+      "name": "review-all-gdds",
+      "source": ".claude/skills/review-all-gdds/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/create-architecture",
+        "/design-review",
+        "/hooks"
+      ],
+      "known_skill_references": [
+        "create-architecture",
+        "design-review"
+      ]
+    },
+    {
+      "name": "scope-check",
+      "source": ".claude/skills/scope-check/SKILL.md",
+      "flags": [
+        "claude_tool_grant",
+        "model_pin"
+      ],
+      "slash_references": [
+        "/estimate",
+        "/scope-check",
+        "/sprint-plan"
+      ],
+      "known_skill_references": [
+        "estimate",
+        "sprint-plan"
+      ]
+    },
+    {
+      "name": "security-audit",
+      "source": ".claude/skills/security-audit/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/gate-check",
+        "/hooks",
+        "/launch-checklist",
+        "/modules",
+        "/security-audit",
+        "/settings",
+        "/setup-engine",
+        "/start"
+      ],
+      "known_skill_references": [
+        "gate-check",
+        "launch-checklist",
+        "settings",
+        "setup-engine",
+        "start"
+      ]
+    },
+    {
+      "name": "settings",
+      "source": ".claude/skills/settings/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin"
+      ],
+      "slash_references": [
+        "/settings",
+        "/start"
+      ],
+      "known_skill_references": [
+        "start"
+      ]
+    },
+    {
+      "name": "setup-engine",
+      "source": ".claude/skills/setup-engine/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/hooks",
+        "/setup-engine"
+      ],
+      "known_skill_references": []
+    },
+    {
+      "name": "skill-improve",
+      "source": ".claude/skills/skill-improve/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/hooks",
+        "/skill-improve",
+        "/skill-test"
+      ],
+      "known_skill_references": [
+        "skill-test"
+      ]
+    },
+    {
+      "name": "skill-test",
+      "source": ".claude/skills/skill-test/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/adopt",
+        "/gate-check",
+        "/help",
+        "/hooks",
+        "/prototype",
+        "/security-audit",
+        "/settings",
+        "/skill-test",
+        "/story-done",
+        "/vertical-slice"
+      ],
+      "known_skill_references": [
+        "adopt",
+        "gate-check",
+        "help",
+        "prototype",
+        "security-audit",
+        "settings",
+        "story-done",
+        "vertical-slice"
+      ]
+    },
+    {
+      "name": "smoke-check",
+      "source": ".claude/skills/smoke-check/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/hooks",
+        "/smoke-check",
+        "/story-done"
+      ],
+      "known_skill_references": [
+        "story-done"
+      ]
+    },
+    {
+      "name": "soak-test",
+      "source": ".claude/skills/soak-test/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/bug-triage",
+        "/gate-check",
+        "/hooks",
+        "/smoke-check",
+        "/soak-test"
+      ],
+      "known_skill_references": [
+        "bug-triage",
+        "gate-check",
+        "smoke-check"
+      ]
+    },
+    {
+      "name": "sprint-plan",
+      "source": ".claude/skills/sprint-plan/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/create-epics",
+        "/create-stories",
+        "/dev",
+        "/dev-story",
+        "/help",
+        "/hooks",
+        "/qa-plan",
+        "/scope-check",
+        "/settings",
+        "/smoke-check",
+        "/sprint-plan",
+        "/sprint-status",
+        "/story",
+        "/story-",
+        "/story-done",
+        "/story-readiness",
+        "/team-qa"
+      ],
+      "known_skill_references": [
+        "create-epics",
+        "create-stories",
+        "dev-story",
+        "help",
+        "qa-plan",
+        "scope-check",
+        "settings",
+        "smoke-check",
+        "sprint-status",
+        "story-done",
+        "story-readiness",
+        "team-qa"
+      ]
+    },
+    {
+      "name": "sprint-status",
+      "source": ".claude/skills/sprint-status/SKILL.md",
+      "flags": [
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/create-stories",
+        "/dev-story",
+        "/hooks",
+        "/milestone-review",
+        "/retrospective",
+        "/scripts",
+        "/settings",
+        "/sprint-plan",
+        "/sprint-status",
+        "/story",
+        "/story-done",
+        "/story-readiness"
+      ],
+      "known_skill_references": [
+        "create-stories",
+        "dev-story",
+        "milestone-review",
+        "retrospective",
+        "settings",
+        "sprint-plan",
+        "story-done",
+        "story-readiness"
+      ]
+    },
+    {
+      "name": "start",
+      "source": ".claude/skills/start/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin"
+      ],
+      "slash_references": [
+        "/adopt",
+        "/architecture-decision",
+        "/architecture-review",
+        "/art-bible",
+        "/brainstorm",
+        "/create-architecture",
+        "/create-control-manifest",
+        "/create-epics",
+        "/create-stories",
+        "/design-review",
+        "/design-system",
+        "/dev-story",
+        "/gate-check",
+        "/help",
+        "/map-systems",
+        "/playtest-report",
+        "/project-stage-detect",
+        "/prototype",
+        "/qa-plan",
+        "/review-all-gdds",
+        "/settings",
+        "/setup-engine",
+        "/sprint-plan",
+        "/start",
+        "/ux-design",
+        "/vertical-slice"
+      ],
+      "known_skill_references": [
+        "adopt",
+        "architecture-decision",
+        "architecture-review",
+        "art-bible",
+        "brainstorm",
+        "create-architecture",
+        "create-control-manifest",
+        "create-epics",
+        "create-stories",
+        "design-review",
+        "design-system",
+        "dev-story",
+        "gate-check",
+        "help",
+        "map-systems",
+        "playtest-report",
+        "project-stage-detect",
+        "prototype",
+        "qa-plan",
+        "review-all-gdds",
+        "settings",
+        "setup-engine",
+        "sprint-plan",
+        "ux-design",
+        "vertical-slice"
+      ]
+    },
+    {
+      "name": "story-done",
+      "source": ".claude/skills/story-done/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/create-stories",
+        "/dev-story",
+        "/gate-check",
+        "/hooks",
+        "/settings",
+        "/smoke-check",
+        "/story-done",
+        "/story-readiness",
+        "/team-qa",
+        "/tech-debt"
+      ],
+      "known_skill_references": [
+        "create-stories",
+        "dev-story",
+        "gate-check",
+        "settings",
+        "smoke-check",
+        "story-readiness",
+        "team-qa",
+        "tech-debt"
+      ]
+    },
+    {
+      "name": "story-readiness",
+      "source": ".claude/skills/story-readiness/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/architecture-decision",
+        "/architecture-review",
+        "/create-epics",
+        "/create-stories",
+        "/dev-story",
+        "/hooks",
+        "/quick-design",
+        "/sprint-plan",
+        "/story-readiness"
+      ],
+      "known_skill_references": [
+        "architecture-decision",
+        "architecture-review",
+        "create-epics",
+        "create-stories",
+        "dev-story",
+        "quick-design",
+        "sprint-plan"
+      ]
+    },
+    {
+      "name": "team-audio",
+      "source": ".claude/skills/team-audio/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/accessibility",
+        "/architecture-decision",
+        "/asset-audit",
+        "/create-stories",
+        "/dev-story",
+        "/direction",
+        "/engine-notes",
+        "/hooks",
+        "/integration-plan",
+        "/sfx-spec",
+        "/team-audio"
+      ],
+      "known_skill_references": [
+        "architecture-decision",
+        "asset-audit",
+        "create-stories",
+        "dev-story"
+      ]
+    },
+    {
+      "name": "team-combat",
+      "source": ".claude/skills/team-combat/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/architecture-decision",
+        "/balance-check",
+        "/code-review",
+        "/create-stories",
+        "/design-system",
+        "/hooks",
+        "/team-combat",
+        "/team-level",
+        "/team-narrative",
+        "/team-polish",
+        "/team-qa"
+      ],
+      "known_skill_references": [
+        "architecture-decision",
+        "balance-check",
+        "code-review",
+        "create-stories",
+        "design-system",
+        "team-level",
+        "team-narrative",
+        "team-polish",
+        "team-qa"
+      ]
+    },
+    {
+      "name": "team-level",
+      "source": ".claude/skills/team-level/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/accessibility",
+        "/architecture-decision",
+        "/create-stories",
+        "/design-review",
+        "/dev-story",
+        "/hooks",
+        "/layout",
+        "/lore",
+        "/narrative",
+        "/production-concepts",
+        "/qa-plan",
+        "/systems",
+        "/team-level",
+        "/visual-direction"
+      ],
+      "known_skill_references": [
+        "architecture-decision",
+        "create-stories",
+        "design-review",
+        "dev-story",
+        "qa-plan"
+      ]
+    },
+    {
+      "name": "team-live-ops",
+      "source": ".claude/skills/team-live-ops/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/analytics",
+        "/brief",
+        "/comms",
+        "/copy",
+        "/design-review",
+        "/economy",
+        "/hooks",
+        "/narrative",
+        "/narrative-text",
+        "/sprint-plan",
+        "/team-live-ops",
+        "/team-release"
+      ],
+      "known_skill_references": [
+        "design-review",
+        "sprint-plan",
+        "team-release"
+      ]
+    },
+    {
+      "name": "team-narrative",
+      "source": ".claude/skills/team-narrative/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/architecture-decision",
+        "/asset-spec",
+        "/brief",
+        "/create-stories",
+        "/design-review",
+        "/dev-story",
+        "/dialogue",
+        "/hooks",
+        "/i18n-review",
+        "/level-integration",
+        "/localize",
+        "/lore",
+        "/onboard",
+        "/project-stage-detect",
+        "/team-level",
+        "/team-narrative",
+        "/team-qa",
+        "/visual-direction"
+      ],
+      "known_skill_references": [
+        "architecture-decision",
+        "asset-spec",
+        "create-stories",
+        "design-review",
+        "dev-story",
+        "localize",
+        "onboard",
+        "project-stage-detect",
+        "team-level",
+        "team-qa"
+      ]
+    },
+    {
+      "name": "team-polish",
+      "source": ".claude/skills/team-polish/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/architecture-decision",
+        "/create-stories",
+        "/dev-story",
+        "/gate-check",
+        "/hooks",
+        "/perf-profile",
+        "/release-checklist",
+        "/settings",
+        "/sprint-plan",
+        "/team-narrative",
+        "/team-polish",
+        "/team-qa"
+      ],
+      "known_skill_references": [
+        "architecture-decision",
+        "create-stories",
+        "dev-story",
+        "gate-check",
+        "perf-profile",
+        "release-checklist",
+        "settings",
+        "sprint-plan",
+        "team-narrative",
+        "team-qa"
+      ]
+    },
+    {
+      "name": "team-qa",
+      "source": ".claude/skills/team-qa/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/architecture-decision",
+        "/bug-report",
+        "/bug-triage",
+        "/create-stories",
+        "/gate-check",
+        "/hooks",
+        "/smoke-check",
+        "/sprint-plan",
+        "/story-done",
+        "/story-readiness",
+        "/team-qa",
+        "/test-evidence-review"
+      ],
+      "known_skill_references": [
+        "architecture-decision",
+        "bug-report",
+        "bug-triage",
+        "create-stories",
+        "gate-check",
+        "smoke-check",
+        "sprint-plan",
+        "story-done",
+        "story-readiness",
+        "test-evidence-review"
+      ]
+    },
+    {
+      "name": "team-release",
+      "source": ".claude/skills/team-release/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/architecture-decision",
+        "/changelog",
+        "/create-stories",
+        "/gate-check",
+        "/hooks",
+        "/patch-notes",
+        "/release-checklist",
+        "/retrospective"
+      ],
+      "known_skill_references": [
+        "architecture-decision",
+        "changelog",
+        "create-stories",
+        "gate-check",
+        "patch-notes",
+        "release-checklist",
+        "retrospective"
+      ]
+    },
+    {
+      "name": "team-ui",
+      "source": ".claude/skills/team-ui/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/architecture-decision",
+        "/code-review",
+        "/create-stories",
+        "/engine-notes",
+        "/hooks",
+        "/quick-design",
+        "/review",
+        "/team-polish",
+        "/team-ui",
+        "/ux-design",
+        "/ux-review",
+        "/visual-design"
+      ],
+      "known_skill_references": [
+        "architecture-decision",
+        "code-review",
+        "create-stories",
+        "quick-design",
+        "team-polish",
+        "ux-design",
+        "ux-review"
+      ]
+    },
+    {
+      "name": "tech-debt",
+      "source": ".claude/skills/tech-debt/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/hooks",
+        "/sprint-plan",
+        "/story-done",
+        "/tech-debt"
+      ],
+      "known_skill_references": [
+        "sprint-plan",
+        "story-done"
+      ]
+    },
+    {
+      "name": "test-evidence-review",
+      "source": ".claude/skills/test-evidence-review/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/create-stories",
+        "/hooks",
+        "/smoke-check",
+        "/sprint-plan",
+        "/story",
+        "/story-done",
+        "/team-qa",
+        "/test-evidence-review",
+        "/test-helpers"
+      ],
+      "known_skill_references": [
+        "create-stories",
+        "smoke-check",
+        "sprint-plan",
+        "story-done",
+        "team-qa",
+        "test-helpers"
+      ]
+    },
+    {
+      "name": "test-flakiness",
+      "source": ".claude/skills/test-flakiness/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/dev",
+        "/hooks",
+        "/regression-suite",
+        "/smoke-check",
+        "/test-flakiness"
+      ],
+      "known_skill_references": [
+        "regression-suite",
+        "smoke-check"
+      ]
+    },
+    {
+      "name": "test-helpers",
+      "source": ".claude/skills/test-helpers/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/dev-story",
+        "/hooks",
+        "/setup-engine",
+        "/skill-test",
+        "/summary",
+        "/test-helpers",
+        "/test-setup"
+      ],
+      "known_skill_references": [
+        "dev-story",
+        "setup-engine",
+        "skill-test",
+        "test-setup"
+      ]
+    },
+    {
+      "name": "test-setup",
+      "source": ".claude/skills/test-setup/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/hooks",
+        "/setup-engine"
+      ],
+      "known_skill_references": [
+        "setup-engine"
+      ]
+    },
+    {
+      "name": "ux-design",
+      "source": ".claude/skills/ux-design/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/architecture-review",
+        "/gate-check",
+        "/hooks",
+        "/ux-design",
+        "/ux-review"
+      ],
+      "known_skill_references": [
+        "architecture-review",
+        "gate-check",
+        "ux-review"
+      ]
+    },
+    {
+      "name": "ux-review",
+      "source": ".claude/skills/ux-review/SKILL.md",
+      "flags": [
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/hooks",
+        "/team-ui",
+        "/ux-design",
+        "/ux-review"
+      ],
+      "known_skill_references": [
+        "team-ui",
+        "ux-design"
+      ]
+    },
+    {
+      "name": "vertical-slice",
+      "source": ".claude/skills/vertical-slice/SKILL.md",
+      "flags": [
+        "ask_user_question",
+        "claude_skill_dir",
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin",
+        "shell_preprocessing"
+      ],
+      "slash_references": [
+        "/architecture-decision",
+        "/brainstorm",
+        "/create-epics",
+        "/create-stories",
+        "/design-system",
+        "/dev-story",
+        "/gate-check",
+        "/hooks",
+        "/prototype",
+        "/sprint-plan",
+        "/vertical-slice"
+      ],
+      "known_skill_references": [
+        "architecture-decision",
+        "brainstorm",
+        "create-epics",
+        "create-stories",
+        "design-system",
+        "dev-story",
+        "gate-check",
+        "prototype",
+        "sprint-plan"
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "name": "accessibility-specialist",
+      "source": ".claude/agents/accessibility-specialist.md",
+      "flags": [
+        "claude_tool_grant"
+      ],
+      "slash_references": []
+    },
+    {
+      "name": "ai-programmer",
+      "source": ".claude/agents/ai-programmer.md",
+      "flags": [
+        "claude_tool_grant"
+      ],
+      "slash_references": [
+        "/code-review"
+      ]
+    },
+    {
+      "name": "analytics-engineer",
+      "source": ".claude/agents/analytics-engineer.md",
+      "flags": [
+        "claude_tool_grant"
+      ],
+      "slash_references": []
+    },
+    {
+      "name": "art-director",
+      "source": ".claude/agents/art-director.md",
+      "flags": [
+        "ask_user_question",
+        "claude_tool_grant"
+      ],
+      "slash_references": []
+    },
+    {
+      "name": "audio-director",
+      "source": ".claude/agents/audio-director.md",
+      "flags": [
+        "ask_user_question",
+        "claude_tool_grant"
+      ],
+      "slash_references": []
+    },
+    {
+      "name": "community-manager",
+      "source": ".claude/agents/community-manager.md",
+      "flags": [
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin"
+      ],
+      "slash_references": [
+        "/patch-notes"
+      ]
+    },
+    {
+      "name": "creative-director",
+      "source": ".claude/agents/creative-director.md",
+      "flags": [
+        "ask_user_question",
+        "claude_tool_grant",
+        "model_pin"
+      ],
+      "slash_references": []
+    },
+    {
+      "name": "devops-engineer",
+      "source": ".claude/agents/devops-engineer.md",
+      "flags": [
+        "claude_tool_grant",
+        "model_pin"
+      ],
+      "slash_references": [
+        "/code-review",
+        "/hotfix",
+        "/team-release"
+      ]
+    },
+    {
+      "name": "economy-designer",
+      "source": ".claude/agents/economy-designer.md",
+      "flags": [
+        "ask_user_question",
+        "claude_tool_grant"
+      ],
+      "slash_references": [
+        "/weight"
+      ]
+    },
+    {
+      "name": "engine-programmer",
+      "source": ".claude/agents/engine-programmer.md",
+      "flags": [
+        "claude_tool_grant"
+      ],
+      "slash_references": [
+        "/code-review",
+        "/modules"
+      ]
+    },
+    {
+      "name": "game-designer",
+      "source": ".claude/agents/game-designer.md",
+      "flags": [
+        "ask_user_question",
+        "claude_tool_grant"
+      ],
+      "slash_references": []
+    },
+    {
+      "name": "gameplay-programmer",
+      "source": ".claude/agents/gameplay-programmer.md",
+      "flags": [
+        "claude_tool_grant"
+      ],
+      "slash_references": [
+        "/architecture-decision",
+        "/code-review",
+        "/modules"
+      ]
+    },
+    {
+      "name": "godot-csharp-specialist",
+      "source": ".claude/agents/godot-csharp-specialist.md",
+      "flags": [
+        "claude_tool_grant",
+        "model_pin"
+      ],
+      "slash_references": [
+        "/code-review",
+        "/root"
+      ]
+    },
+    {
+      "name": "godot-gdextension-specialist",
+      "source": ".claude/agents/godot-gdextension-specialist.md",
+      "flags": [
+        "claude_tool_grant",
+        "model_pin"
+      ],
+      "slash_references": [
+        "/code-review"
+      ]
+    },
+    {
+      "name": "godot-gdscript-specialist",
+      "source": ".claude/agents/godot-gdscript-specialist.md",
+      "flags": [
+        "claude_tool_grant",
+        "model_pin"
+      ],
+      "slash_references": [
+        "/code-review"
+      ]
+    },
+    {
+      "name": "godot-shader-specialist",
+      "source": ".claude/agents/godot-shader-specialist.md",
+      "flags": [
+        "claude_tool_grant",
+        "model_pin"
+      ],
+      "slash_references": [
+        "/code-review"
+      ]
+    },
+    {
+      "name": "godot-specialist",
+      "source": ".claude/agents/godot-specialist.md",
+      "flags": [
+        "agent_dispatch",
+        "claude_tool_grant"
+      ],
+      "slash_references": [
+        "/code-review"
+      ]
+    },
+    {
+      "name": "lead-programmer",
+      "source": ".claude/agents/lead-programmer.md",
+      "flags": [
+        "claude_tool_grant",
+        "model_pin"
+      ],
+      "slash_references": [
+        "/code-review"
+      ]
+    },
+    {
+      "name": "level-designer",
+      "source": ".claude/agents/level-designer.md",
+      "flags": [
+        "ask_user_question",
+        "claude_tool_grant"
+      ],
+      "slash_references": [
+        "/design-review"
+      ]
+    },
+    {
+      "name": "live-ops-designer",
+      "source": ".claude/agents/live-ops-designer.md",
+      "flags": [
+        "ask_user_question",
+        "claude_tool_grant"
+      ],
+      "slash_references": []
+    },
+    {
+      "name": "localization-lead",
+      "source": ".claude/agents/localization-lead.md",
+      "flags": [
+        "claude_tool_grant"
+      ],
+      "slash_references": [
+        "/localize"
+      ]
+    },
+    {
+      "name": "narrative-director",
+      "source": ".claude/agents/narrative-director.md",
+      "flags": [
+        "ask_user_question",
+        "claude_tool_grant"
+      ],
+      "slash_references": []
+    },
+    {
+      "name": "network-programmer",
+      "source": ".claude/agents/network-programmer.md",
+      "flags": [
+        "claude_tool_grant"
+      ],
+      "slash_references": [
+        "/code-review"
+      ]
+    },
+    {
+      "name": "performance-analyst",
+      "source": ".claude/agents/performance-analyst.md",
+      "flags": [
+        "claude_tool_grant"
+      ],
+      "slash_references": [
+        "/perf-profile"
+      ]
+    },
+    {
+      "name": "producer",
+      "source": ".claude/agents/producer.md",
+      "flags": [
+        "ask_user_question",
+        "claude_tool_grant",
+        "model_pin"
+      ],
+      "slash_references": []
+    },
+    {
+      "name": "prototyper",
+      "source": ".claude/agents/prototyper.md",
+      "flags": [
+        "claude_tool_grant",
+        "claude_tree_reference",
+        "model_pin"
+      ],
+      "slash_references": [
+        "/deprecated-apis",
+        "/prototype",
+        "/vertical-slice"
+      ]
+    },
+    {
+      "name": "qa-lead",
+      "source": ".claude/agents/qa-lead.md",
+      "flags": [
+        "claude_tool_grant"
+      ],
+      "slash_references": [
+        "/bug-report",
+        "/bug-triage",
+        "/qa-plan",
+        "/smoke-check",
+        "/story-readiness",
+        "/team-qa"
+      ]
+    },
+    {
+      "name": "qa-tester",
+      "source": ".claude/agents/qa-tester.md",
+      "flags": [
+        "claude_tool_grant",
+        "claude_tree_reference"
+      ],
+      "slash_references": [
+        "/bug-report",
+        "/bug-triage",
+        "/code-review",
+        "/day-one-patch",
+        "/milestone-review",
+        "/setup-engine",
+        "/smoke-check",
+        "/test-setup"
+      ]
+    },
+    {
+      "name": "release-manager",
+      "source": ".claude/agents/release-manager.md",
+      "flags": [
+        "claude_tool_grant"
+      ],
+      "slash_references": [
+        "/gate-check",
+        "/patch-notes",
+        "/release-checklist"
+      ]
+    },
+    {
+      "name": "security-engineer",
+      "source": ".claude/agents/security-engineer.md",
+      "flags": [
+        "claude_tool_grant"
+      ],
+      "slash_references": [
+        "/code-review",
+        "/security-audit",
+        "/settings"
+      ]
+    },
+    {
+      "name": "sound-designer",
+      "source": ".claude/agents/sound-designer.md",
+      "flags": [
+        "claude_tool_grant"
+      ],
+      "slash_references": []
+    },
+    {
+      "name": "systems-designer",
+      "source": ".claude/agents/systems-designer.md",
+      "flags": [
+        "ask_user_question",
+        "claude_tool_grant"
+      ],
+      "slash_references": []
+    },
+    {
+      "name": "technical-artist",
+      "source": ".claude/agents/technical-artist.md",
+      "flags": [
+        "claude_tool_grant"
+      ],
+      "slash_references": [
+        "/code-review",
+        "/modules"
+      ]
+    },
+    {
+      "name": "technical-director",
+      "source": ".claude/agents/technical-director.md",
+      "flags": [
+        "ask_user_question",
+        "claude_tool_grant",
+        "model_pin"
+      ],
+      "slash_references": []
+    },
+    {
+      "name": "tools-programmer",
+      "source": ".claude/agents/tools-programmer.md",
+      "flags": [
+        "claude_tool_grant"
+      ],
+      "slash_references": [
+        "/code-review",
+        "/modules"
+      ]
+    },
+    {
+      "name": "ue-blueprint-specialist",
+      "source": ".claude/agents/ue-blueprint-specialist.md",
+      "flags": [
+        "claude_tool_grant",
+        "model_pin"
+      ],
+      "slash_references": [
+        "/code-review"
+      ]
+    },
+    {
+      "name": "ue-gas-specialist",
+      "source": ".claude/agents/ue-gas-specialist.md",
+      "flags": [
+        "claude_tool_grant",
+        "model_pin"
+      ],
+      "slash_references": [
+        "/code-review"
+      ]
+    },
+    {
+      "name": "ue-replication-specialist",
+      "source": ".claude/agents/ue-replication-specialist.md",
+      "flags": [
+        "claude_tool_grant",
+        "model_pin"
+      ],
+      "slash_references": [
+        "/code-review"
+      ]
+    },
+    {
+      "name": "ue-umg-specialist",
+      "source": ".claude/agents/ue-umg-specialist.md",
+      "flags": [
+        "claude_tool_grant",
+        "model_pin"
+      ],
+      "slash_references": [
+        "/code-review"
+      ]
+    },
+    {
+      "name": "ui-programmer",
+      "source": ".claude/agents/ui-programmer.md",
+      "flags": [
+        "claude_tool_grant",
+        "claude_tree_reference"
+      ],
+      "slash_references": [
+        "/code-review",
+        "/modules"
+      ]
+    },
+    {
+      "name": "unity-addressables-specialist",
+      "source": ".claude/agents/unity-addressables-specialist.md",
+      "flags": [
+        "claude_tool_grant",
+        "model_pin"
+      ],
+      "slash_references": [
+        "/code-review"
+      ]
+    },
+    {
+      "name": "unity-dots-specialist",
+      "source": ".claude/agents/unity-dots-specialist.md",
+      "flags": [
+        "claude_tool_grant",
+        "model_pin"
+      ],
+      "slash_references": [
+        "/code-review"
+      ]
+    },
+    {
+      "name": "unity-shader-specialist",
+      "source": ".claude/agents/unity-shader-specialist.md",
+      "flags": [
+        "claude_tool_grant",
+        "model_pin"
+      ],
+      "slash_references": [
+        "/code-review"
+      ]
+    },
+    {
+      "name": "unity-specialist",
+      "source": ".claude/agents/unity-specialist.md",
+      "flags": [
+        "agent_dispatch",
+        "claude_tool_grant"
+      ],
+      "slash_references": [
+        "/code-review"
+      ]
+    },
+    {
+      "name": "unity-ui-specialist",
+      "source": ".claude/agents/unity-ui-specialist.md",
+      "flags": [
+        "claude_tool_grant",
+        "model_pin"
+      ],
+      "slash_references": [
+        "/code-review"
+      ]
+    },
+    {
+      "name": "unreal-specialist",
+      "source": ".claude/agents/unreal-specialist.md",
+      "flags": [
+        "agent_dispatch",
+        "claude_tool_grant"
+      ],
+      "slash_references": [
+        "/code-review"
+      ]
+    },
+    {
+      "name": "ux-designer",
+      "source": ".claude/agents/ux-designer.md",
+      "flags": [
+        "ask_user_question",
+        "claude_tool_grant"
+      ],
+      "slash_references": [
+        "/ux-design"
+      ]
+    },
+    {
+      "name": "world-builder",
+      "source": ".claude/agents/world-builder.md",
+      "flags": [
+        "ask_user_question",
+        "claude_tool_grant"
+      ],
+      "slash_references": []
+    },
+    {
+      "name": "writer",
+      "source": ".claude/agents/writer.md",
+      "flags": [
+        "ask_user_question",
+        "claude_tool_grant"
+      ],
+      "slash_references": []
+    }
+  ],
+  "hooks": [
+    ".claude/hooks/detect-gaps.sh",
+    ".claude/hooks/log-agent-stop.sh",
+    ".claude/hooks/log-agent.sh",
+    ".claude/hooks/log-instructions.sh",
+    ".claude/hooks/notify.sh",
+    ".claude/hooks/post-compact.sh",
+    ".claude/hooks/pre-compact.sh",
+    ".claude/hooks/session-start.sh",
+    ".claude/hooks/session-stop.sh",
+    ".claude/hooks/validate-assets.sh",
+    ".claude/hooks/validate-commit.sh",
+    ".claude/hooks/validate-push.sh",
+    ".claude/hooks/validate-skill-change.sh",
+    ".claude/hooks/yaml-helper.sh"
+  ],
+  "rules": [
+    ".claude/rules/agent-memory.md",
+    ".claude/rules/ai-code.md",
+    ".claude/rules/data-files.md",
+    ".claude/rules/design-docs.md",
+    ".claude/rules/engine-code.md",
+    ".claude/rules/gameplay-code.md",
+    ".claude/rules/narrative.md",
+    ".claude/rules/network-code.md",
+    ".claude/rules/prototype-code.md",
+    ".claude/rules/shader-code.md",
+    ".claude/rules/skill-authoring.md",
+    ".claude/rules/test-standards.md",
+    ".claude/rules/ui-code.md"
+  ]
+}

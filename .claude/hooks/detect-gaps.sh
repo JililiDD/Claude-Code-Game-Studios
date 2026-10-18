@@ -26,6 +26,7 @@ else
   CCGS_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." 2>/dev/null && pwd)"
 fi
 [ -n "$CCGS_ROOT" ] && cd "$CCGS_ROOT" 2>/dev/null || true
+CCGS_HELPER="${CCGS_HELPER:-.claude/hooks/yaml-helper.sh}"
 
 # Hook: detect-gaps.sh
 # Event: SessionStart
@@ -41,8 +42,8 @@ echo "=== Checking for Documentation Gaps ==="
 FRESH_PROJECT=true
 
 # Check if engine is configured (project.yaml first, fall back to technical-preferences.md)
-if [ -f "project.yaml" ] && [ -f ".claude/hooks/yaml-helper.sh" ]; then
-  source .claude/hooks/yaml-helper.sh
+if [ -f "project.yaml" ] && [ -f "$CCGS_HELPER" ]; then
+  source "$CCGS_HELPER"
   ENGINE_NAME=$(get_yaml_key project.yaml engine.name 2>/dev/null)
   if [ -n "$ENGINE_NAME" ]; then
     FRESH_PROJECT=false
@@ -143,8 +144,8 @@ fi
 # Resolved AFTER the fresh-project early-exit above, so a brand-new project
 # never pays for the lookup.
 WORKFLOW="standard"
-if [ -f .claude/hooks/yaml-helper.sh ]; then
-    . .claude/hooks/yaml-helper.sh 2>/dev/null
+if [ -f "$CCGS_HELPER" ]; then
+    . "$CCGS_HELPER" 2>/dev/null
     W=$(resolve_setting modes.workflow 2>/dev/null | cut -f1)
     [ -n "$W" ] && WORKFLOW="$W"
 fi
@@ -312,7 +313,7 @@ fi
 # instead, and /help routes by the brief -- telling the user to run /gate-check
 # contradicted both.
 STAGE=""
-if [ "$WORKFLOW" != "minimal" ] && [ -f .claude/hooks/yaml-helper.sh ]; then
+if [ "$WORKFLOW" != "minimal" ] && [ -f "$CCGS_HELPER" ]; then
     # get_yaml_key takes the file first; called with the key alone it returned
     # nothing, and only the legacy stage.txt was ever read.
     STAGE=$(get_yaml_key project.yaml project.stage 2>/dev/null)

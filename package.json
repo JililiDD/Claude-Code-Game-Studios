@@ -1,0 +1,13 @@
+{
+  "name": "claude-code-game-studios-pi-adapter",
+  "version": "0.0.0-development",
+  "private": true,
+  "type": "module",
+  "description": "Unreleased Pi adapter for Claude Code Game Studios",
+  "pi": {
+    "skills": [],
+    "extensions": [],
+    "prompts": [],
+    "themes": []
+  }
+}

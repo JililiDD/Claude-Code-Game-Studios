@@ -40,8 +40,8 @@ fi
 
 # features.session_state: off => this hook is a no-op. Default `on`; see
 # session_state_enabled() in yaml-helper.sh.
-if [ -f .claude/hooks/yaml-helper.sh ]; then
-    . .claude/hooks/yaml-helper.sh
+if [ -f "${CCGS_HELPER:-.claude/hooks/yaml-helper.sh}" ]; then
+    . "${CCGS_HELPER:-.claude/hooks/yaml-helper.sh}"
     session_state_enabled || exit 0
 fi
 

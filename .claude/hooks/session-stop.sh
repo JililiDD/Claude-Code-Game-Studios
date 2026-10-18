@@ -32,8 +32,8 @@ fi
 
 # features.session_state: off => this hook is a no-op. Default `on`; see
 # session_state_enabled() in yaml-helper.sh.
-if [ -f .claude/hooks/yaml-helper.sh ]; then
-    . .claude/hooks/yaml-helper.sh
+if [ -f "${CCGS_HELPER:-.claude/hooks/yaml-helper.sh}" ]; then
+    . "${CCGS_HELPER:-.claude/hooks/yaml-helper.sh}"
     session_state_enabled || exit 0
 fi
 
@@ -130,22 +130,33 @@ if [ ! -t 0 ] && [ -f "$AUDIT_LOG" ]; then
     # No session id means no honest per-session number. Report nothing rather
     # than a total that silently spans every session in the log.
     if [ -n "$SESSION_ID" ] && [ "$SESSION_ID" != "unknown" ] && [ "$SESSION_ID" != "null" ]; then
-        SPAWN_LINES=$(grep -F " | $SESSION_ID | Agent invoked: " "$AUDIT_LOG" 2>/dev/null)
+        if [ "${CCGS_INTERFACE:-}" = "pi" ]; then
+            SPAWN_LINES=$(grep -F " | $SESSION_ID | " "$AUDIT_LOG" 2>/dev/null \
+              | grep -E ' \| (Role|Review) invoked: ')
+            SPAWN_LABEL="Fresh Pi model requests"
+            SPAWN_HEADING="Session CCGS Request Cost"
+            SPAWN_TYPES='Role|Review'
+        else
+            SPAWN_LINES=$(grep -F " | $SESSION_ID | Agent invoked: " "$AUDIT_LOG" 2>/dev/null)
+            SPAWN_LABEL="Subagent spawns"
+            SPAWN_HEADING="Session Subagent Cost"
+            SPAWN_TYPES='Agent'
+        fi
         SPAWN_COUNT=$(printf '%s' "$SPAWN_LINES" | grep -c . 2>/dev/null)
         [ -z "$SPAWN_COUNT" ] && SPAWN_COUNT=0
 
         if [ "$SPAWN_COUNT" -gt 0 ]; then
             BREAKDOWN=$(printf '%s\n' "$SPAWN_LINES" \
-                | sed 's/.*Agent invoked: //' \
+                | sed -E "s/.*($SPAWN_TYPES) invoked: //" \
                 | sort | uniq -c | sort -rn)
 
             {
-                echo "# Session Subagent Cost"
+                echo "# $SPAWN_HEADING"
                 echo ""
                 echo "**Session:** \`$SESSION_ID\`  "
                 echo "**Updated:** $TIMESTAMP"
                 echo ""
-                echo "Subagent spawns this session: **$SPAWN_COUNT**"
+                echo "$SPAWN_LABEL this session: **$SPAWN_COUNT**"
                 echo ""
                 echo "| Agent | Spawns |"
                 echo "|-------|--------|"
@@ -154,12 +165,16 @@ if [ ! -t 0 ] && [ -f "$AUDIT_LOG" ]; then
                     echo "| $name | $count |"
                 done
                 echo ""
-                echo "Each spawn is a fresh context window that re-reads its own inputs."
+                if [ "${CCGS_INTERFACE:-}" = "pi" ]; then
+                    echo "Each role/gate request is a fresh model context that re-reads its inputs."
+                else
+                    echo "Each spawn is a fresh context window that re-reads its own inputs."
+                fi
                 echo "To reduce this: lower \`modes.review_mode\` (\`/settings modes.review_mode=solo\`)"
                 echo "or \`modes.rigor\` (\`/settings modes.rigor=minimal\`)."
             } > "$SESSION_LOG_DIR/session-cost.md" 2>/dev/null
 
-            echo "Subagent spawns this session: $SPAWN_COUNT (see production/session-logs/session-cost.md)"
+            echo "$SPAWN_LABEL this session: $SPAWN_COUNT (see production/session-logs/session-cost.md)"
         fi
     fi
 fi

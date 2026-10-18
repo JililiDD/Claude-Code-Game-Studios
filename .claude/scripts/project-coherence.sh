@@ -34,7 +34,9 @@ set -u
 export LC_ALL=C
 
 ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
-if [ -n "${CLAUDE_PROJECT_DIR:-}" ] && [ -f "$CLAUDE_PROJECT_DIR/project.yaml" ]; then
+if [ -n "${CCGS_GAME_ROOT:-}" ] && [ -f "$CCGS_GAME_ROOT/project.yaml" ]; then
+  ROOT="$CCGS_GAME_ROOT"
+elif [ -n "${CLAUDE_PROJECT_DIR:-}" ] && [ -f "$CLAUDE_PROJECT_DIR/project.yaml" ]; then
   ROOT="$CLAUDE_PROJECT_DIR"
 fi
 cd "$ROOT" || exit 0

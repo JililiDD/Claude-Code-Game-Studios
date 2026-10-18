@@ -1,0 +1,1537 @@
+{
+  "skills": {
+    ".claude/skills/adopt/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/adopt/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py",
+        "pi/tests/test_migrate.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/architecture-decision/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/architecture-decision/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/architecture-review/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/architecture-review/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/art-bible/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/art-bible/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/asset-audit/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/asset-audit/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/asset-spec/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/asset-spec/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/balance-check/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/balance-check/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/brainstorm/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/brainstorm/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/bug-report/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/bug-report/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/bug-triage/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/bug-triage/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/changelog/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/changelog/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/code-review/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/code-review/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/consistency-check/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/consistency-check/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/content-audit/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/content-audit/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/create-architecture/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/create-architecture/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/create-control-manifest/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/create-control-manifest/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/create-epics/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/create-epics/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/create-stories/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/create-stories/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/day-one-patch/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/day-one-patch/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/design-review/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/design-review/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/design-system/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/design-system/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/dev-story/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/dev-story/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py",
+        "pi/tests/test_godot_check.py",
+        "pi/tests/test_checks.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/estimate/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/estimate/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/gate-check/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/gate-check/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/help/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/help/SKILL.md",
+      "note": "Pi read-only orientation candidate; not released",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py",
+        "pi/tests/test_artifacts.py",
+        "pi/tests/test_stories.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/hotfix/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/hotfix/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/launch-checklist/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/launch-checklist/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/localize/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/localize/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/map-systems/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/map-systems/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/milestone-review/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/milestone-review/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/onboard/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/onboard/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/patch-notes/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/patch-notes/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/perf-profile/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/perf-profile/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/playtest-report/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/playtest-report/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/project-stage-detect/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/project-stage-detect/SKILL.md",
+      "note": "Pi game-root scan and tier-aware report candidate; not released",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py",
+        "pi/tests/test_artifacts.py",
+        "pi/tests/test_code_root.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/propagate-design-change/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/propagate-design-change/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/prototype/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/prototype/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/qa-plan/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/qa-plan/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/quick-design/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/quick-design/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/regression-suite/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/regression-suite/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/release-checklist/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/release-checklist/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/retrospective/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/retrospective/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/reverse-document/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/reverse-document/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/review-all-gdds/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/review-all-gdds/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/scope-check/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/scope-check/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/security-audit/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/security-audit/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/settings/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/settings/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py",
+        "pi/tests/test_settings.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/setup-engine/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/setup-engine/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py",
+        "pi/tests/test_engine_paths.py",
+        "pi/tests/test_godot_check.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/skill-improve/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/skill-improve/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/skill-test/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/skill-test/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py",
+        "pi/tests/test_behavior_matrix.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/smoke-check/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/smoke-check/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/soak-test/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/soak-test/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/sprint-plan/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/sprint-plan/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/sprint-status/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/sprint-status/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/start/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/start/SKILL.md",
+      "note": "Pi onboarding candidate; not released",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py",
+        "pi/tests/test_init_game.py",
+        "pi/tests/test_local_lifecycle.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/story-done/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/story-done/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/story-readiness/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/story-readiness/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/team-audio/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/team-audio/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/team-combat/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/team-combat/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/team-level/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/team-level/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/team-live-ops/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/team-live-ops/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/team-narrative/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/team-narrative/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/team-polish/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/team-polish/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/team-qa/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/team-qa/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/team-release/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/team-release/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/team-ui/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/team-ui/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/tech-debt/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/tech-debt/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/test-evidence-review/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/test-evidence-review/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/test-flakiness/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/test-flakiness/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/test-helpers/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/test-helpers/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/test-setup/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/test-setup/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/ux-design/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/ux-design/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/ux-review/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/ux-review/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    },
+    ".claude/skills/vertical-slice/SKILL.md": {
+      "state": "draft",
+      "target": "pi/skills/vertical-slice/SKILL.md",
+      "note": "Generated compatibility candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_workflow_fleet.py"
+      ],
+      "local_scope": "Pi skill command expansion, references and available offline helpers; source-domain decisions and full game phases still need owner validation"
+    }
+  },
+  "agents": {
+    ".claude/agents/accessibility-specialist.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-accessibility-specialist/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/ai-programmer.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-ai-programmer/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/analytics-engineer.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-analytics-engineer/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/art-director.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-art-director/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/audio-director.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-audio-director/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/community-manager.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-community-manager/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/creative-director.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-creative-director/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/devops-engineer.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-devops-engineer/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/economy-designer.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-economy-designer/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/engine-programmer.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-engine-programmer/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/game-designer.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-game-designer/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/gameplay-programmer.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-gameplay-programmer/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/godot-csharp-specialist.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-godot-csharp-specialist/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/godot-gdextension-specialist.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-godot-gdextension-specialist/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/godot-gdscript-specialist.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-godot-gdscript-specialist/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/godot-shader-specialist.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-godot-shader-specialist/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/godot-specialist.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-godot-specialist/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/lead-programmer.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-lead-programmer/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/level-designer.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-level-designer/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/live-ops-designer.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-live-ops-designer/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/localization-lead.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-localization-lead/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/narrative-director.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-narrative-director/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/network-programmer.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-network-programmer/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/performance-analyst.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-performance-analyst/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/producer.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-producer/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/prototyper.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-prototyper/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/qa-lead.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-qa-lead/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/qa-tester.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-qa-tester/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/release-manager.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-release-manager/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/security-engineer.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-security-engineer/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/sound-designer.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-sound-designer/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/systems-designer.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-systems-designer/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/technical-artist.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-technical-artist/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/technical-director.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-technical-director/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/tools-programmer.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-tools-programmer/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/ue-blueprint-specialist.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-ue-blueprint-specialist/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/ue-gas-specialist.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-ue-gas-specialist/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/ue-replication-specialist.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-ue-replication-specialist/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/ue-umg-specialist.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-ue-umg-specialist/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/ui-programmer.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-ui-programmer/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/unity-addressables-specialist.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-unity-addressables-specialist/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/unity-dots-specialist.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-unity-dots-specialist/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/unity-shader-specialist.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-unity-shader-specialist/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/unity-specialist.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-unity-specialist/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/unity-ui-specialist.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-unity-ui-specialist/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/unreal-specialist.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-unreal-specialist/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/ux-designer.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-ux-designer/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/world-builder.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-world-builder/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    },
+    ".claude/agents/writer.md": {
+      "state": "draft",
+      "target": "pi/skills/ccgs-writer/SKILL.md",
+      "note": "Generated single-session role candidate; behavior NOT verified",
+      "local_evidence": [
+        "pi/tests/test_behavior_matrix.py",
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_model_switch.py"
+      ],
+      "local_scope": "49 fresh read-only role invocations on mock Pi model, not real specialist quality or artifact authorship"
+    }
+  },
+  "hooks": {
+    ".claude/hooks/detect-gaps.sh": {
+      "state": "draft",
+      "target": "pi/extensions/studio-session.ts",
+      "note": "Pi adapter exists; full behavior NOT yet verified",
+      "local_evidence": [
+        "pi/tests/test_session.py"
+      ],
+      "local_scope": "Local hook/extension event or script fixture; interactive TUI and release behavior not proven"
+    },
+    ".claude/hooks/log-agent-stop.sh": {
+      "state": "draft",
+      "target": "pi/extensions/studio-gates.ts",
+      "note": "Pi adapter exists; full behavior NOT yet verified",
+      "local_evidence": [
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_gate_fleet.py"
+      ],
+      "local_scope": "Local hook/extension event or script fixture; interactive TUI and release behavior not proven"
+    },
+    ".claude/hooks/log-agent.sh": {
+      "state": "draft",
+      "target": "pi/extensions/studio-gates.ts",
+      "note": "Pi adapter exists; full behavior NOT yet verified",
+      "local_evidence": [
+        "pi/tests/test_role_fleet.py",
+        "pi/tests/test_gate_fleet.py"
+      ],
+      "local_scope": "Local hook/extension event or script fixture; interactive TUI and release behavior not proven"
+    },
+    ".claude/hooks/log-instructions.sh": {
+      "state": "inapplicable",
+      "target": null,
+      "note": "Optional Claude instruction-load diagnostic; Pi path rules have an explicit extension and tests"
+    },
+    ".claude/hooks/notify.sh": {
+      "state": "inapplicable",
+      "target": null,
+      "note": "Claude Windows PowerShell toast hook; Pi uses native ctx.ui.notify for warnings and decisions"
+    },
+    ".claude/hooks/post-compact.sh": {
+      "state": "draft",
+      "target": "pi/extensions/studio-session.ts",
+      "note": "Pi adapter exists; full behavior NOT yet verified",
+      "local_evidence": [
+        "pi/tests/test_session.py"
+      ],
+      "local_scope": "Local hook/extension event or script fixture; interactive TUI and release behavior not proven"
+    },
+    ".claude/hooks/pre-compact.sh": {
+      "state": "draft",
+      "target": "pi/extensions/studio-session.ts",
+      "note": "Pi adapter exists; full behavior NOT yet verified",
+      "local_evidence": [
+        "pi/tests/test_session.py"
+      ],
+      "local_scope": "Local hook/extension event or script fixture; interactive TUI and release behavior not proven"
+    },
+    ".claude/hooks/session-start.sh": {
+      "state": "draft",
+      "target": "pi/extensions/studio-session.ts",
+      "note": "Pi adapter exists; full behavior NOT yet verified",
+      "local_evidence": [
+        "pi/tests/test_session.py"
+      ],
+      "local_scope": "Local hook/extension event or script fixture; interactive TUI and release behavior not proven"
+    },
+    ".claude/hooks/session-stop.sh": {
+      "state": "draft",
+      "target": "pi/extensions/studio-session.ts",
+      "note": "Pi adapter exists; full behavior NOT yet verified",
+      "local_evidence": [
+        "pi/tests/test_session.py"
+      ],
+      "local_scope": "Local hook/extension event or script fixture; interactive TUI and release behavior not proven"
+    },
+    ".claude/hooks/validate-assets.sh": {
+      "state": "draft",
+      "target": "pi/extensions/studio-checks.ts",
+      "note": "Pi adapter exists; full behavior NOT yet verified",
+      "local_evidence": [
+        "pi/tests/test_checks.py"
+      ],
+      "local_scope": "Local hook/extension event or script fixture; interactive TUI and release behavior not proven"
+    },
+    ".claude/hooks/validate-commit.sh": {
+      "state": "draft",
+      "target": "pi/extensions/studio-checks.ts",
+      "note": "Pi adapter exists; full behavior NOT yet verified",
+      "local_evidence": [
+        "pi/tests/test_checks.py"
+      ],
+      "local_scope": "Local hook/extension event or script fixture; interactive TUI and release behavior not proven"
+    },
+    ".claude/hooks/validate-push.sh": {
+      "state": "draft",
+      "target": "pi/extensions/studio-checks.ts",
+      "note": "Pi adapter exists; full behavior NOT yet verified",
+      "local_evidence": [
+        "pi/tests/test_checks.py"
+      ],
+      "local_scope": "Local hook/extension event or script fixture; interactive TUI and release behavior not proven"
+    },
+    ".claude/hooks/validate-skill-change.sh": {
+      "state": "inapplicable",
+      "target": null,
+      "note": "Game projects do not edit installed package skills; Pi migration tests validate package skill changes"
+    },
+    ".claude/hooks/yaml-helper.sh": {
+      "state": "draft",
+      "target": "pi/runtime/config.py",
+      "note": "Pi adapter exists; full behavior NOT yet verified",
+      "local_evidence": [
+        "pi/tests/test_config.py",
+        "pi/tests/test_settings.py",
+        "pi/tests/test_code_root.py"
+      ],
+      "local_scope": "Local hook/extension event or script fixture; interactive TUI and release behavior not proven"
+    }
+  },
+  "rules": {
+    ".claude/rules/agent-memory.md": {
+      "state": "draft",
+      "target": "pi/extensions/studio-rules.ts",
+      "note": "Pi path-scoped rule loader candidate; behavior NOT yet verified",
+      "local_evidence": [
+        "pi/tests/test_rules.py"
+      ],
+      "local_scope": "Named path-scoped rule is supplied before a matching game write and isolates framework paths"
+    },
+    ".claude/rules/ai-code.md": {
+      "state": "draft",
+      "target": "pi/extensions/studio-rules.ts",
+      "note": "Pi path-scoped rule loader candidate; behavior NOT yet verified",
+      "local_evidence": [
+        "pi/tests/test_rules.py"
+      ],
+      "local_scope": "Named path-scoped rule is supplied before a matching game write and isolates framework paths"
+    },
+    ".claude/rules/data-files.md": {
+      "state": "draft",
+      "target": "pi/extensions/studio-rules.ts",
+      "note": "Pi path-scoped rule loader candidate; behavior NOT yet verified",
+      "local_evidence": [
+        "pi/tests/test_rules.py"
+      ],
+      "local_scope": "Named path-scoped rule is supplied before a matching game write and isolates framework paths"
+    },
+    ".claude/rules/design-docs.md": {
+      "state": "draft",
+      "target": "pi/extensions/studio-rules.ts",
+      "note": "Pi path-scoped rule loader candidate; behavior NOT yet verified",
+      "local_evidence": [
+        "pi/tests/test_rules.py"
+      ],
+      "local_scope": "Named path-scoped rule is supplied before a matching game write and isolates framework paths"
+    },
+    ".claude/rules/engine-code.md": {
+      "state": "draft",
+      "target": "pi/extensions/studio-rules.ts",
+      "note": "Pi path-scoped rule loader candidate; behavior NOT yet verified",
+      "local_evidence": [
+        "pi/tests/test_rules.py"
+      ],
+      "local_scope": "Named path-scoped rule is supplied before a matching game write and isolates framework paths"
+    },
+    ".claude/rules/gameplay-code.md": {
+      "state": "draft",
+      "target": "pi/extensions/studio-rules.ts",
+      "note": "Pi path-scoped rule loader candidate; behavior NOT yet verified",
+      "local_evidence": [
+        "pi/tests/test_rules.py"
+      ],
+      "local_scope": "Named path-scoped rule is supplied before a matching game write and isolates framework paths"
+    },
+    ".claude/rules/narrative.md": {
+      "state": "draft",
+      "target": "pi/extensions/studio-rules.ts",
+      "note": "Pi path-scoped rule loader candidate; behavior NOT yet verified",
+      "local_evidence": [
+        "pi/tests/test_rules.py"
+      ],
+      "local_scope": "Named path-scoped rule is supplied before a matching game write and isolates framework paths"
+    },
+    ".claude/rules/network-code.md": {
+      "state": "draft",
+      "target": "pi/extensions/studio-rules.ts",
+      "note": "Pi path-scoped rule loader candidate; behavior NOT yet verified",
+      "local_evidence": [
+        "pi/tests/test_rules.py"
+      ],
+      "local_scope": "Named path-scoped rule is supplied before a matching game write and isolates framework paths"
+    },
+    ".claude/rules/prototype-code.md": {
+      "state": "draft",
+      "target": "pi/extensions/studio-rules.ts",
+      "note": "Pi path-scoped rule loader candidate; behavior NOT yet verified",
+      "local_evidence": [
+        "pi/tests/test_rules.py"
+      ],
+      "local_scope": "Named path-scoped rule is supplied before a matching game write and isolates framework paths"
+    },
+    ".claude/rules/shader-code.md": {
+      "state": "draft",
+      "target": "pi/extensions/studio-rules.ts",
+      "note": "Pi path-scoped rule loader candidate; behavior NOT yet verified",
+      "local_evidence": [
+        "pi/tests/test_rules.py"
+      ],
+      "local_scope": "Named path-scoped rule is supplied before a matching game write and isolates framework paths"
+    },
+    ".claude/rules/skill-authoring.md": {
+      "state": "draft",
+      "target": "pi/extensions/studio-rules.ts",
+      "note": "Pi path-scoped rule loader candidate; behavior NOT yet verified",
+      "local_evidence": [
+        "pi/tests/test_rules.py"
+      ],
+      "local_scope": "Named path-scoped rule is supplied before a matching game write and isolates framework paths"
+    },
+    ".claude/rules/test-standards.md": {
+      "state": "draft",
+      "target": "pi/extensions/studio-rules.ts",
+      "note": "Pi path-scoped rule loader candidate; behavior NOT yet verified",
+      "local_evidence": [
+        "pi/tests/test_rules.py"
+      ],
+      "local_scope": "Named path-scoped rule is supplied before a matching game write and isolates framework paths"
+    },
+    ".claude/rules/ui-code.md": {
+      "state": "draft",
+      "target": "pi/extensions/studio-rules.ts",
+      "note": "Pi path-scoped rule loader candidate; behavior NOT yet verified",
+      "local_evidence": [
+        "pi/tests/test_rules.py"
+      ],
+      "local_scope": "Named path-scoped rule is supplied before a matching game write and isolates framework paths"
+    }
+  }
+}

@@ -35,7 +35,9 @@
 
 # The project root is two levels above this file: the injected command runs from
 # wherever the skill's shell starts, which need not be the root.
-cd "$(dirname "${BASH_SOURCE[0]}")/../.." 2>/dev/null || { echo "STORIES      none"; exit 0; }
+# Pi keeps this script in the installed framework but passes the separate
+# game root explicitly. Without the override Claude Code keeps its old path.
+cd "${CCGS_GAME_ROOT:-$(dirname "${BASH_SOURCE[0]}")/../..}" 2>/dev/null || { echo "STORIES      none"; exit 0; }
 
 files=()
 for f in production/epics/*/story-*.md; do
